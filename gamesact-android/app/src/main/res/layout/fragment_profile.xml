@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".menuFragments.ProfileFragment">
+
+    <!--    https://github.com/hdodenhof/CircleImageView -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/round_image_view"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/dummy_profile_image"
+                app:civ_border_color="@color/red"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/ashish_tamang"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/ashish_email"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/profile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/dummy_phone_number"
+                android:textColor="#3D3D3D"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:contentDescription="@string/image_of_ribbon"
+                android:src="@drawable/seperator_ribbon"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="30dp"/>
+
+            <Button
+                android:id="@+id/profile_edit_profile"
+                android:text="@string/edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                app:icon="@drawable/ic_edit"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                />
+
+            <Button
+                android:id="@+id/profile_change_password"
+                android:text="@string/change_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                app:icon="@drawable/ic_key_svgrepo"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                />
+
+            <Button
+                android:id="@+id/profile_log_out"
+                android:text="@string/sign_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                app:icon="@drawable/ic_logout"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                />
+
+
+        </LinearLayout>
+
+
+</ScrollView>

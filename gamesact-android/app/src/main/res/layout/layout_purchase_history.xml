@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/order_title"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="@string/fortnite_200_v_bucks" />
+
+        <!-- https://material.io/components/chips/android#using-chips -->
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_user_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ashish31"
+                app:chipIcon="@drawable/ic_tag"
+                android:checkable="false"
+                app:chipIconTint="@color/orange"
+                />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_nepali_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rs_500"
+                app:chipIcon="@drawable/ic_dollar"
+                android:checkable="false"
+                app:chipIconTint="@color/green2"
+                />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_processing"
+                app:chipIcon="@drawable/ic_tick"
+                android:checkable="false"
+                app:chipBackgroundColor="@color/red"
+                android:textColor="@color/greyWhite"
+
+                />
+
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1068154736144",
+    "project_id": "game-sact",
+    "storage_bucket": "game-sact.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068154736144:android:ec95f05086349165de8495",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068154736144-alvbomf96rob24vs4vu40ui6gij6h48d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_h43Y6kDVzvY-dYVgQfO5hk1YRib91gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068154736144-alvbomf96rob24vs4vu40ui6gij6h48d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

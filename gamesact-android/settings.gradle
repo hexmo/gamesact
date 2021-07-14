@@ -1,0 +1,2 @@
+rootProject.name = "GameSact"
+include ':app'
